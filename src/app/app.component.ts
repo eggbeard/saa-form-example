@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'saa-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'saa-form-example';
+  myFormFather = new FormGroup({
+    nickName: new FormControl(),
+    name: new FormControl(),
+    age: new FormControl(),
+    minAge: new FormControl()
+  });
+
+  onSubmit() {}
 }
