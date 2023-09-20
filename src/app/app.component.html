@@ -1,7 +1,10 @@
-<form [formGroup]="myFormFather" (ngSubmit)="onSubmit()">
+<form [formGroup]="myFormFather"
+      (ngSubmit)="onSubmit()">
   <input formControlName="nickName">
   <input formControlName="name">
   <saa-age-form formControlName="minAge"></saa-age-form>
+  <saa-mileage-range minMilesControlName="minMiles"
+                     maxMilesControlName="maxMiles"></saa-mileage-range>
   <button type="submit"
           [disabled]="myFormFather.invalid">Save
   </button>

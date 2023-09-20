@@ -11,7 +11,9 @@ export class AppComponent {
     nickName: new FormControl(),
     name: new FormControl(),
     age: new FormControl(),
-    minAge: new FormControl()
+    minAge: new FormControl(),
+    minMiles: new FormControl(),
+    maxMiles: new FormControl()
   });
 
   onSubmit() {}

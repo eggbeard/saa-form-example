@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AgeFormComponent } from './age-form/age-form.component';
+import { MileageRangeComponent } from './mileage-range/mileage-range.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AgeFormComponent
+    AgeFormComponent,
+    MileageRangeComponent
   ],
   imports: [
     BrowserModule,
